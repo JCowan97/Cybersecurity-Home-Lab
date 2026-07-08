@@ -217,6 +217,7 @@ The following screenshots will accompany this write-up.
 | Figure | Description |
 |---------|-------------|
 | Figure 1 | Home Lab Hardware |
+![Figure 1](screenshots/phase-01/home-lab-hardware.jpg)
 | Figure 2 | CyberLab Directory Structure |
 | Figure 3 | VMware Workstation Pro Installed |
 | Figure 4 | Hardware Virtualization Successfully Verified |
