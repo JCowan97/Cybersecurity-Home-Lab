@@ -216,31 +216,31 @@ The following screenshots will accompany this write-up.
 
 ## Figure 1 – Home Lab Hardware
 
-![Home Lab Hardware](screenshots/phase%2001/Home%20Lab%20Hardware.jpg)
+![Home Lab Hardware](../../screenshots/phase%2001/Home%20Lab%20Hardware.jpg)
 
 ## Figure 2 – CyberLab Directory Structure
 
-![CyberLab Directory Structure](screenshots/phase%2001/CyberLab%20Directory%20Structure.png)
+![CyberLab Directory Structure](../../screenshots/phase%2001/CyberLab%20Directory%20Structure.png)
 
 ## Figure 3 – VMware Workstation Pro Installed
 
-![VMware Installed](screenshots/phase%2001/VMware%20Installed.png)
+![VMware Installed](../../screenshots/phase%2001/VMware%20Installed.png)
 
 ## Figure 4 – Hardware Virtualisation Verified
 
-![Hardware Virtualisation Verified](screenshots/phase%2001/Hardware%20Virtualisation%20Verified.png)
+![Hardware Virtualisation Verified](../../screenshots/phase%2001/Hardware%20Virtualisation%20Verified.png)
 
 ## Figure 5 – Operating System Downloads
 
-![Operating System Downloads](screenshots/phase%2001/Operating%20System%20Downloads.png)
+![Operating System Downloads](../../screenshots/phase%2001/Operating%20System%20Downloads.png)
 
 ## Figure 6 – VMware Preferences
 
-![VMware Preferences](screenshots/phase%2001/VMware%20Preferences.png)
+![VMware Preferences](../../screenshots/phase%2001/VMware%20Preferences.png)
 
 ## Figure 7 – ISO Repository
 
-![ISO Repository](screenshots/phase%2001/ISO%20Repository.png)
+![ISO Repository](../../screenshots/phase%2001/ISO%20Repository.png)
 
 ---
 
