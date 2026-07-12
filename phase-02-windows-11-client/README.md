@@ -133,7 +133,7 @@ The increase of CPUs to 4 allows faster installation of Windows and applications
 
 ![Figure-10- Optimal Hardware](screenshots/figure-10-optimal-hardware.png)
 
-**Figure 11: Ready for Install**\
+**Figure 11: Ready for Install**
 
 Figure 11 now shows the configuration of the VM is complete and the next screen will show the start to the Windows 11 install
 
@@ -185,7 +185,7 @@ Next step is to set up our device. We are going to set it up as a personal use c
 
 ![Figure-17- Set Up Device](screenshots/figure-17-select-personal.png)
 
-**Figure 18- Connect to a netwrok**
+**Figure 18: Connect to a netwrok**
 
 During the installation the Out-Of-Box-Experience 'OOBE' prompted for ann internet connection and to log in to a personal Microsoft Account before completing the build. As this is a home lab i did not want to connect my own Microsoft account to the build. So I avoided connecting to the network at the start. As seen in figure 18 there is no option to continue without internet, therefore I needed to bypass the OOBE.
 
