@@ -151,7 +151,7 @@ Now that we have bypassed the network connection and signing into a Microsfot Ac
 
 ## VMware Tools Installation
 
-VMware Tools was installed inside the Windows 11 virtual machine using the Typical installation option.
+VMware Tools were installed inside the Windows 11 virtual machine using the Typical installation option.
 
 VMware Tools provides:
 
@@ -164,7 +164,9 @@ VMware Tools provides:
 
 The virtual machine was restarted after the installation was completed.
 
-![VMware Tools installation](screenshots/05-vmware-tools.png)
+![Figure-22- VMware Tools installation](screenshots/figure-22-install-VMtools.png)
+**Figure 21: VMware Tools Installed**
+Typical installation was chosen as it is all that is needed to run this VM in VMware. It will optimise the VM and experience to provide a better user experience to allow better quality training.
 
 ---
 
@@ -209,10 +211,9 @@ Autoruns identifies programs, services and scheduled tasks that automatically st
 
 TCPView displays active TCP and UDP connections, listening ports and the processes associated with them.
 
-![Sysinternals folder](screenshots/06-sysinternals-folder.png)
-
-![Process Explorer](screenshots/07-process-explorer.png)
-
+![figure-23- Installed Programs](screenshots/figure-23-installed-programs.png)
+**Figure 23: Installed Programs**
+Here you see the initial programs installed to begin using this VM for training at the begining. Further development will see programs like Metasploit, BurpSuite, Powershell, Splunk and others as my experience and knowledge grows.
 ---
 
 ## Windows Updates
@@ -220,8 +221,6 @@ TCPView displays active TCP and UDP connections, listening ports and the process
 Windows Update was run after the initial installation.
 
 Installing current Windows updates created a more secure and stable baseline before the system is connected to other home-lab machines.
-
-![Windows Update](screenshots/08-windows-update.png)
 
 ---
 
@@ -241,7 +240,7 @@ This snapshot provides a known-good recovery point before the system is:
 - Connected to a SIEM
 - Used in attack and detection exercises
 
-![VMware clean snapshot](screenshots/09-clean-snapshot.png)
+![figure-24 -VMware clean snapshot](screenshots/figure-24-snapshot-clean-build.png)
 
 ---
 
