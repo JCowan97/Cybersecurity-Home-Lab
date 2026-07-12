@@ -73,37 +73,62 @@ This  is the main VMware Workstation interface. I selected **Create a New Virtua
 
 ### 2. Select the Windows 11 ISO
 ![Figure-02- New Virtual Machine Wizard](screenshots/Figure-02-VM-Install-Wizard.png)
+
 **Figure 02: New Virtual MAchine Wizard**
 This is where the build starts, I selected Typical for a basic start up and install
+
 ![Figure-03- Installer Disc Image File](screenshots/Figure-03-installer-iso.png)
+
 **Figure 03: Installer Disc Image File**
+
 This Window is where I browsed and selected the Windows 11 ISO from my external SSD
+
 ![Figure-04- Windows 11 ISO selected](screenshots/figure-04-windowss11-iso-selected.png)
+
 **Figure 04: Windows 11 ISO File Selected**
+
 As seen here, I have successsfully selected the Windows 11 ISO File from my CyberLab Externall SSD
 
 ### 3. Name and Configure Settings
+
 ![Figure-05- Name the Virtual Machine](screenshots/figure-05-name-vm.png)
+
 **Figure 05: Name the Virtual Machine**
+
 Here I named the Virtual Machine 'WIN11-CLIENT01' This name give it a general description of what the VM is used for and numbering it as 01 allows me to futher develop my lab environment to expand the number of Windopws 11 Clients within my Active Directory at a later date. I also selceted the location of the build to be in my VMs folder of my CyberLab external SSD. This allows me to keep all my VMs external from my Host computer's SSD allowing for further development without reducing my Host performance and storage capacity.
 ![Figure-06- Configure Encryption](screenshots/figure-06-encrypt-files.png)
+
 **Figure 06: Configure Encryption**
+
 This screen requests you to configure how  you would like to encrpyt your VM, I selected the files supporting TPM as I don't need everything encrypted. I chose an easy password to remember.
 ![Figure-07- Disk Cpacity](screenshots/figure-07-default-disc.png)
+
 **Figure 07- Disk Capacity**
+
 I increased the maximum disk size to 100GB, this is an increase from the recommmended 64GB for Win 11. This is to provide sufficient storage for the OS. It mallows Windows updates, VMware Tools, applicationas, log files and future Cybersecurity Tools to be installed throughout my projects.
+
 ![Figure-08- Store Disk as Single File](screenshots/figure-08-optimal-disc-settings.png)
+
 **Figure 08: Optimal Disk Settings**
+
 These are the optimal Disk Settings. As seen in Figure 8 I have changed the Maximum Disk Size to 100GB and have selected to store virtual disk as a single File. The reason for this is for a modern Windows host using NTFS file system, storing the disk as a single file  generally provides a better performance and simplifies file management.
+
 ![Figure-09- Default Hardware](screenshots/figure-09-default-hardware.png)
+
 **Figure 09: Default Hardware**
+
 VMWare selects the default hardware as seen in Figure 09. You can see here that the location, versions, OS and Disk Capacity we have already selected are shown. Here is where we are going to customize the hardware to fit our needs by increasing the memory to 8GB and using 4CPUs rather than 2.
 ![Figure-10- Optimal Hardware](screenshots/figure-10-optimal-hardware.png)
+
 **Figure 10: Optimal Hardware**
+
 As seen in Figure 10 we have increased memory and CPUs from clicking on the 'Customize Hardware' option. The reason for increasing the memory is although 4GB is enough to run Win11 it can be slightly sluggish, at 8GB it improves the responsiveness, allows multiple application to run simultaneously and supports Cybersecurity tools such as Wireshark, VS Code, Sysinternals Suite and Powershell more comfortablly. Since my Host L:aptop is 32GB or RAM allocating 8GB to this VM leaves approx 24GB  available to the host OS and any additional VMs that may be running.
 The increase of CPUs to 4 allows faster installation of Windows and applications, improved multitasking performance, better responsiveness when analysing network traffic or running cybersecurity tools and is a more realistic workstation performance.
+
 ![Figure-11- Ready to Install](screenshots/figure-11-ready-to-install.png)
+
 **Figure 11: Ready for Install**\
+
 Figure 11 now shows the configuration of the VM is complete and the next screen will show the start to the Windows 11 install
 
 ---
@@ -117,34 +142,61 @@ During installation, I chose not to connect the virtual machine to my personal M
 This keeps the home lab separate from my personal accounts and prevents unnecessary synchronisation between the virtual machine and my primary computer.
 
 ![Figure-12- Boot Manager](screenshots/figure-12-boot-normally.png)
+
 **Figure 12: Boot Manager**
+
 This is the start of the OS Windows 11 Install, We select 'Boot Normally' to allow the Install to start.
+
 ![Figure-13- Select Install Location](screenshots/figure-13-select-install-location.png)
+
 **Figure 13: Select Install Location**
+
 As seen in figure 13 the location of the install is the 100GB disk we configured in the first step, we sewlect this as our install location.
 ![Figure-14- Ready to install](screenshots/figure-14-install-win11pro-ready.png)
+
 **Figure 14: Ready to Install**
+
 Windows 11 Setup window now says it is ready to install, it is going to install Windows 11 Pro from our ISO file and Keep Nothing. The reason it is keeping nothing is because we are setting this up as a new computer, there are no files we need to keep because it is a clean build not an update of an OS.
+
 ![Figure-15- Installing](screenshots/figure-15-insatlling.png)
+
 **Figure 15: Installing Windows 11**
+
 This window now shows the progress of installing windows. Now we wait for the install to complete before we name and move on with our windows setup.
 ![Figure-16- Name Device](screenshots/figure-16-name-device.png)
+
 **Figure 16: Name Device**
+
 As before when name the Virtual Machine we called it 'WIN11-CLIENT01' we do the same here,  consistent naming convention will make it easier to identify systems as the home lab expands to include additional Windows clients, servers, Linux machines, firewalls and monitoring systems.
+
 ![Figure-17- Set Up Device](screenshots/figure-17-select-personal.png)
+
 **Figure 17: Set Up Device as Personal**
+
 Next step is to set up our device. We are going to set it up as a personal use computer, the reason for this is school or work would require us to log in to a corporate business structure account, we do not have this and we are realistically creating our own eventually with different OS and structures. So here select personal.
+
 ![Figure-18- Connect to a netowrk](screenshots/figure-18-bybass-network1.png)
+
 **Figure 18- Connect to a netwrok**
+
 During the installation the Out-Of-Box-Experience 'OOBE' prompted for ann internet connection and to log in to a personal Microsoft Account before completing the build. As this is a home lab i did not want to connect my own Microsoft account to the build. So I avoided connecting to the network at the start. As seen in figure 18 there is no option to continue without internet, therefore I needed to bypass the OOBE.
+
 ![Figure-19- CMD Prompt](screenshots/figure-19-bypass-network2.png)
+
 **Figure 19: CMD Prompt to Bypass OOBE**
+
 To bypass the OOBE I opened the CMD Prompt using 'Shift + F10' keyboard shortcut. openeing the command prompt allows administrators to perform troubleshooting, execute configuration commands and modify parts of installation processes. In the CMD Prompt screen I used the CMD 'OOBE\BYPASSNRO' which modifies the Windows Out-Of-Box Experience by enabling the 'I don't have internet' option during setup. after the command is executed Windows automatically restarts the OOBE process.
+
 1[Figure-20- Restarted OOBE](screenshots/figure-20-bypass-network3.png)
+
 **Figure 20: Restarted OOBE**
+
 Now that Windows OOBE has restarted we can see the option 'I don't have internet' at the bottom, we click this and can now set up Windows 11 without internet and not required to log into a Microsoft Account. 
+
 ![Figure-21- Passed Network Account](screenshots/figure-21-passed-network-account.png)
+
 **Figure 21: Who is using this device**
+
 Now that we have bypassed the network connection and signing into a Microsfot Account, Windows want's to know who is using the account, this is just creating a user log in. I have named mine labadmin as this is easy to remember, next is create the password for this log in and the security questions which I have not shown for security reasons. 
 
 ---
@@ -165,7 +217,9 @@ VMware Tools provides:
 The virtual machine was restarted after the installation was completed.
 
 ![Figure-22- VMware Tools installation](screenshots/figure-22-install-VMtools.png)
+
 **Figure 21: VMware Tools Installed**
+
 Typical installation was chosen as it is all that is needed to run this VM in VMware. It will optimise the VM and experience to provide a better user experience to allow better quality training.
 
 ---
@@ -212,7 +266,9 @@ Autoruns identifies programs, services and scheduled tasks that automatically st
 TCPView displays active TCP and UDP connections, listening ports and the processes associated with them.
 
 ![figure-23- Installed Programs](screenshots/figure-23-installed-programs.png)
+
 **Figure 23: Installed Programs**
+
 Here you see the initial programs installed to begin using this VM for training at the begining. Further development will see programs like Metasploit, BurpSuite, Powershell, Splunk and others as my experience and knowledge grows.
 ---
 
