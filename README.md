@@ -11,11 +11,13 @@ The lab is designed to support learning in:
 - Vulnerability scanning
 - Ethical hacking and CTF practice
 
-## Lab Progress
+## Project Navigation
 
-| Day | Focus | Write-up |
-|---|---|---|
-| Day 1 | Planning, ISO downloads, folder structure | [Day 1](docs/day-01-planning-and-downloads.md) |
+### Home Lab Build
+
+-[Phase 01 - Home Lab Planning](phase-01-home-lab-planning/README.md)
+-[Phase 02 - Windows 11 Client VM Build](phase-02-windows-11-client/README.md)
+-[Phase 03 - Kali Linux Attack VM Build](phase-03-kali-linux-attack/README.md)
 
 
 ## Hardware
