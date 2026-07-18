@@ -31,6 +31,8 @@ The objectives of this phase were to:
 
 ## Host Environment
 
+| **Component** | **Configuration** |
+| :---: | :---: |
 | Host OS | Windows 11 Pro |
 | Processor | Intel Core I9 |
 | Memory | 32GB RAM |
@@ -305,7 +307,7 @@ The operating system package repositories were synchronised and all available up
 
 Maintaining an up-to-date operating system is an essential security practice and ensures future lab activities are performed using the latest software versions and security patches.
 
-**Figure 23.*** Updating the Operating System
+**Figure 23.** Updating the Operating System
 
 ![figure 23- updating the operating system](screenshots/figure-23-updating-OS.png)
 
@@ -389,6 +391,7 @@ The system was manually installed, fully updated, integrated with VMware, valida
 The resulting virtual machine now serves as the dedicated attacker workstation within the cybersecurity home lab and provides a stable baseline for future reconnaissance, penetration testing, packet analysis and adversary simulation exercises
 
 This virtual machine now forms one of the core systems within my cybersecurity home lab and will be used extensively throughout future red team, blue team and detection engineering projects
+
 ---
 
 ## Key Learning Outcomes
